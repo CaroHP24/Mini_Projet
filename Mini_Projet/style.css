@@ -1,0 +1,160 @@
+header{
+    background-image: url("image/cafe.jpg");
+    text-align: center;
+    height: 10%;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("image/gr.jpg");
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+  
+.popup {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#main{
+    background-color: grey;
+}
+
+
+#Pproduits{
+    
+    height: 100%;
+}
+
+#boutonAdd{
+    position: absolute;
+    top: 13.5%;
+    right: 1%;
+}
+
+#bouttonModif{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+img{
+    width: 80%; 
+    margin-top: 4%;
+}
+
+.column{
+    float: left;
+    width: 31%;
+    margin: 1%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+
+footer{
+    margin-top: 5px;
+    background-color: pink;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+  /* Fixez le bouton sur le côté gauche de la page the button on the left side of the page */
+.open-btn {
+    display: flex;
+    justify-content: flex-start;
+  }
+  /* Stylez et fixez le bouton sur la page */
+
+  /* Positionnez la forme Popup */
+.login-popup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  /* Masquez la forme Popup */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-45%, 5%);
+    border: 2px solid #666;
+    z-index: 9;
+  }
+  /* Styles pour le conteneur de la forme */
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  /* Largeur complète pour les champs de saisie */
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+  }
+  /* Quand les entrées sont concentrées, faites quelque chose */
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  /* Stylez le bouton de connexion */
+.form-container .btn {
+    background-color: #69482c;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.9;
+  }
+  /* Stylez le bouton pour annuler */
+.form-container .cancel {
+    background-color: #4e4d4d;
+  }
+  /* Planez les effets pour les boutons */
+.form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }

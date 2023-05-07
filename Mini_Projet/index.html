@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Mini projet</title>
+</head>
+
+
+
+<body>
+
+<header class="w3-container">
+<h1>Titre</h1>
+<h2>Sous titre</h2>
+
+</header>
+
+<div class="popup-container">
+    <div class="popup">
+      <h2>Bienvenue sur notre site vitrine!</h2>
+      <p>Cliquez sur OK pour continuer.</p>
+      <button id="ok-btn">OK</button>
+    </div>
+</div>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home 1</a>
+    <a href="#" class="w3-bar-item w3-button">Produits 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div id="main" style="text-align: left;">
+    <button id="openNav" class="w3-button  w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+
+<div class=" w3-margin-bottom w3-margin-top" id="boutonAdd">
+    <button class="open-button" onclick="openForm()">+</button>
+</div> 
+
+<div class="form-popup" id="myForm">
+  <form action="p.php" method="post" class="form-container" >
+    <h1>Ajouter un article</h1>
+
+    <label for="nom"><b>Nom :</b></label>
+    <input type="text" id="nom" placeholder="Nom" name="nom" required>
+
+    <label for="Categorie"><b>Catégorie</b></label>
+    <input type="text" id="categorie" placeholder="Catégorie" name="categorie" required>
+
+    <label for="prix"><b>Prix</b></label>
+    <input type="text" id="prix" placeholder="Prix" name="prix" required>
+
+    <label for="url"><b>Url de la Photo</b></label>
+    <input type="text" id="url" placeholder="URL" name="url" required>
+
+    <button type="submit" class="btn">Ajouter</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Annuler</button>
+  </form>
+</div>
+
+
+
+    <div class="w3-container" id="Pproduits">
+        <div style="margin-top: 15px;">
+
+            <div class="column" id="column">
+                <div class="card" id="card"> 
+
+                    <img src="image/black_insomnia.jpg"> 
+                    <div id="bouttonModif" style="text-align: center;" >
+                        <button>Modifier</button onclick:>
+                    </div>
+                    <div id="bouttonSupp" style="text-align: center;">
+                        <button>Supprimer</button onclick:>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="image/dwc.jpg"> 
+                    <div id="bouttonModif" style="text-align: center;" >
+                        <button>Modifier</button onclick:>
+                    </div>
+                    <div id="bouttonSupp" style="text-align: center;">
+                        <button>Supprimer</button onclick:>
+                    </div>
+                    <p>Death Wish Coffee</p>
+                    <p>20 euro/450g</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="image/st_helena.png" >
+                    <div id="bouttonModif" style="text-align: center;" >
+                        <button>Modifier</button>
+                    </div>
+                    <div id="bouttonSupp" style="text-align: center;">
+                        <button>Supprimer</button onclick:>
+                    </div>
+                    <p>St. Helena</p>
+                    <p>100 euro/450g</p>  
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card">
+                    <img src="image/black_ivory.png" >
+                    <div id="bouttonModif" style="text-align: center;">
+                        <button>Modifier</button>
+                    </div>
+                    <div id="bouttonSupp" style="text-align: center;">
+                        <button>Supprimer</button onclick:>
+                    </div>
+                    <p>Black Ivory</p>
+                    <p>900 euro/450g</p>
+            
+                </div>
+            </div>
+                
+            <div class="column">
+                <div class="card">
+                    <img src="image/tasse.png" >
+                <div id="bouttonModif" style="text-align: center;" >
+                    <button>Modifier</button>
+                </div>
+                <div id="bouttonSupp" style="text-align: center;">
+                    <button>Supprimer</button onclick:>
+                </div>
+                <p>tasse</p>
+                <p>15 euro</p>
+                
+            
+                </div>
+            </div>   
+            
+            <div class="column">
+                <div class="card">
+                    <img src="image/tasse2.png" >
+                    <div id="bouttonModif" style="text-align: center;">
+                        <button>Modifier</button>
+                    </div>
+                    <div id="bouttonSupp" style="text-align: center;">
+                        <button>Supprimer</button onclick="supprimer()">
+                    </div>
+                    <p>Tasse</p>
+                    <p>9.98 euro</p>
+                </div>
+            </div> 
+        </div>
+    </div>  
+
+    
+<footer class="w3-container" >
+    <h6>Titre</h6>
+    <p>PATE Caroline</p>
+    <h6>2306186</h6>
+    
+</footer>
+
+</body>
+
+<script>
+    window.addEventListener("load", function () 
+    {
+        var popupContainer = document.querySelector(".popup-container");
+        var okBtn = document.querySelector("#ok-btn");
+
+        okBtn.addEventListener("click", function () 
+        {
+        popupContainer.style.display = "none";
+        });
+
+        popupContainer.style.display = "flex";
+    });
+
+    function w3_open() 
+    {
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() 
+    {
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+    }
+
+    function openForm()
+    {
+        document.getElementById("myForm").style.display="block";
+    }
+
+    function closeForm()
+    {
+        document.getElementById("myForm").style.display="none";
+    }
+
+
+   
+
+
+
+    
+
+    
+
+</script>
+
+</html>

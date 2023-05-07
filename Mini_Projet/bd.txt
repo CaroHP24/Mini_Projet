@@ -1,0 +1,6 @@
+0000|Black insomnia|strong|30|black_insomnia.jpg
+0001|Death Wish|strong|20|dwc.jpg
+0010|St Helena|insolite|100|st_helena.png
+0011|Black Ivory|insolite|900|black_ivory.png
+0100|Tasse a café|accessoires|15|tasse.png
+0101|Tasse a café humoristique|9.98|tasse2.png
